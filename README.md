@@ -1,0 +1,1 @@
+This repository manages TeX data for the gradation thesis.
