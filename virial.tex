@@ -1,0 +1,41 @@
+\section{ビリアル半径 $R_\text{vir}$}
+
+赤方偏移$z$においてビリアル平衡に達したダークマターハローの平均密度は：
+\begin{align}
+	\rho_\text{vir}(z) &= \rho_\text{cr} \Delta_\text{vir} \\
+	&\simeq \num{1.8e-27} \left( \frac{\Delta_\text{vir}}{200}\right) \left(\frac{h}{0.7}\right)^2 E^2(z) \ \si{g. cm^{-3}}
+\end{align}
+
+ここでビリアル半径内の全質量(ビリアル質量)を$M_\text{vir}$を用いると
+\begin{align}
+	R_\text{vir} &= \left( \frac{3 M_\text{vir}}{4 \pi \rho_\text{vir}(z)} \right)^{1/3} \\
+	&\simeq 2.1 \left( \frac{M_\text{vir}}{10^{15} M_\odot} \right)^{1/3} \left( \frac{\Delta_\text{vir}}{200} \right)^{-1/3} \left( \frac{h}{0.7} \right)^{-2/3} E^{-2/3}(z) \quad \si{Mpc}
+\end{align}
+となり、観測される銀河団のサイズと質量等の関係を近似的に再現する。
+
+ここでは近傍宇宙を考えているので、$z=0$では$E(z) = 1$であり、$\Delta_\text{vir} = 200$のときのビリアル半径を$R_{200}$とすると
+\begin{align}
+	R_{200} \simeq 2.1 \left( \frac{M_\text{vir}}{10^{15} M_\odot} \right)^{1/3} \left( \frac{h}{0.7} \right)^{-2/3} \quad \si{Mpc}
+\end{align}
+
+\begin{algorithmic}
+	\Function{Solve\_Virial\_Mass}{$\text{radius}, \text{mass}, \text{density\_DM}, \text{density\_total}$}
+	\State $\text{valid\_indices} \gets \text{indices of } \text{radius} \text{ where } \text{total\_mass} \text{ is not } \infty$
+	\State $\text{radius} \gets \text{radius}[ \text{valid\_indices}]$
+	\State $\text{total\_mass} \gets \text{total\_mass}[ \text{valid\_indices}]$
+	
+	\State $\text{sorted\_radius}, \ \text{sorted\_total\_mass} \gets \text{sort } \text{radius}, \ \text{total\_mass} \text{ based on } \text{radius}$
+	
+	\State $\text{cum\_mass} \gets \text{cumulative sum of } \text{sorted\_total\_mass}$
+	
+	\State $h \gets 0.6774$
+	
+	\State $\text{virial\_radius} \gets 2.1 \times \left(\frac{\text{cum\_mass} \times 10^{10}}{10^{15}}\right)^{\frac{1}{3}} \times \left(\frac{h}{0.7}\right)^{-\frac{2}{3}}$
+	
+	\State $\text{min\_index} \gets \text{index of the element in } \text{radius}$ \\
+	\qquad \qquad \qquad \qquad \qquad$\text{ with the smallest value of } (\text{radius} - \text{virial\_radius})^2$
+	\State $ r_{200} \gets \text{radius}[\text{min\_index}]$
+	
+	\State \textbf{return} $r_{200}$
+	\EndFunction
+\end{algorithmic}
