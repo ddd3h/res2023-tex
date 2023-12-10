@@ -18,6 +18,6 @@ This repository manages TeX data for the gradation thesis.
 
 - まとめ ( -> [conclusion.tex](conclusion.tex) )
 
-- 謝辞
+- 謝辞 ( -> [acknowledge.tex](acknowledge.tex) )
 
-- 参考文献
+- 参考文献 ( -> [reference.bib](reference.bib) )
