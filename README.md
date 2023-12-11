@@ -1,8 +1,8 @@
-This repository manages TeX data for the gradation thesis.
+This repository manages TeX data for the gradation paper.
 
 # タイトル
 
-「宇宙論的シミュレーションデータベースIllustris-TNGを用いた銀河周辺物質の速度と元素分布構造の解明」
+仮「宇宙論的シミュレーションデータベースIllustris-TNGを用いた銀河周辺物質の速度と元素分布構造の解明」
 
 
 
