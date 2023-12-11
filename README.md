@@ -8,6 +8,8 @@ This repository manages TeX data for the gradation paper.
 
 # 目次
 
+Reference: [https://doi.org/10.1093/mnras/stz2306](https://doi.org/10.1093/mnras/stz2306) ;
+
 - はじめに ( -> [introduction.tex](introduction.tex) )
   - IllustrisTNG
   - ビリアル半径
@@ -18,7 +20,7 @@ This repository manages TeX data for the gradation paper.
   - face-onとedge-onの導出
   - ビリアル半径の計算
   - outflowの計算
-  
+
 - 結果 ( -> [result.tex](result.tex) )
 
 - 議論 ( -> [discussion.tex](discussion.tex) )
@@ -28,3 +30,4 @@ This repository manages TeX data for the gradation paper.
 - 謝辞 ( -> [acknowledge.tex](acknowledge.tex) )
 
 - 参考文献 ( -> [reference.bib](reference.bib) )
+
