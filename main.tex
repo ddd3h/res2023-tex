@@ -1,5 +1,5 @@
 \RequirePackage{plautopatch}
-\documentclass[uplatex,a4paper,11pt,dvipdfmx]{jsreport}
+\documentclass[uplatex,a4paper,12pt,dvipdfmx]{jsreport}
 
 \usepackage{bm}
 \usepackage{physics}
@@ -26,11 +26,22 @@
 \usepackage{color}
 \usepackage{okumacro}
 \usepackage{framed}
-\usepackage[dvipdfmx]{hyperref}
-
+\usepackage{hyperref}
+\usepackage{pxjahyper}
 \usepackage{algpseudocode}
 \usepackage{algorithm}
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
 
+\hypersetup{% hyperrefオプションリスト
+    setpagesize=false,
+    bookmarksnumbered=true,%
+    bookmarksopen=true,%
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
 
 \setlength{\textwidth}{\fullwidth}  %本文の幅(textwidth)を全体の幅(=ヘッダ部の幅)にそろえる
 \setlength{\evensidemargin}{\oddsidemargin} %偶数ページの余白と奇数ページの余白をそろえる
@@ -38,6 +49,7 @@
 \title{\textbf{宇宙論的シミュレーションデータベースIllustris-TNGを用いた銀河周辺物質の速度と元素分布構造の解明}}
 \author{埼玉大学理学部物理学科 \\ 宇宙物理実験研究室 \\ \\ 20RP021 西濱大将}
 \date{2024/02/xx}
+
 
 \begin{document}
     \maketitle
@@ -50,7 +62,8 @@
     \input{conclusion}
     \input{acknowledge}
     
-    \bibliographystyle{jplain}
-    \bibliography{reference}
+    \bibliographystyle{aasjournal}
+    \bibliography{res2023}
+    \addcontentsline{toc}{chapter}{\bibname}
     
 \end{document}
