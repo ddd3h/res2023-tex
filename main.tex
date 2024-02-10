@@ -32,6 +32,9 @@
 \usepackage{algpseudocode}
 \usepackage{algorithm}
 \usepackage{natbib}
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage{subfiles}
 \bibpunct{(}{)}{;}{a}{}{,}
 
 \hypersetup{% hyperrefオプションリスト
@@ -55,14 +58,15 @@
 \begin{document}
     \maketitle
     \input{abstract}
+    \setcounter{tocdepth}{2}
     \tableofcontents
-    \input{introduction}
-    \input{method}
-    \input{result}
-    \input{discussion}
-    \input{conclusion}
-    \input{acknowledge}
-    
+    \subfile{introduction}
+    \subfile{method}
+    \subfile{result}
+%    \input{discussion}
+%    \input{conclusion}
+%    \input{acknowledge}
+%    
     \nocite{*}
     \bibliographystyle{aasjournal}
     \bibliography{res2023}
