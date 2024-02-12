@@ -1,5 +1,5 @@
 \RequirePackage{plautopatch}
-\documentclass[uplatex,a4paper,12pt,dvipdfmx]{jsreport}
+\documentclass[uplatex,a4paper,11pt,dvipdfmx]{jsreport}
 
 \usepackage{bm}
 \usepackage{physics}
@@ -66,10 +66,10 @@
 %    \input{discussion}
 %    \input{conclusion}
 %    \input{acknowledge}
-%    
     \nocite{*}
     \bibliographystyle{aasjournal}
     \bibliography{res2023}
     \addcontentsline{toc}{chapter}{\bibname}
     
+    \subfile{appendix}
 \end{document}
