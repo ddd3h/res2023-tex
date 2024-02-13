@@ -1,4 +1,4 @@
-\section{ビリアル半径 $R_\text{vir}$}
+\section{ビリアル半径 $R_{200}$}
 
 物質の分布に対して球対称性を仮定する．この場合，球の中心となる地点から半径$R$内に存在する物質の質量を$M$とすると，運動方程式
 \begin{equation}
@@ -32,20 +32,22 @@
 \end{equation}
 が物質優勢期のハッブルパラメータ$H(t) \simeq 2/3t$と同じ形をしており，球形領域が当初は宇宙とともに膨張していたことを示す．また$\theta = \pi$に達すると，半径$R$は増加から減少に転じ，球形領域は収縮を始める．この時点の物理量を添字ta (転回を意味する英語"turn-around"の略)で表す．このときのポテンシャルと運動エネルギーの和は$U_\text{ta}+K_\text{ta} = U_\text{ta}$がいえる．
 
-ここでビリアル定理を銀河内の物質に対して適用する．
-
-一様球に対するエネルギー保存則
+ここでビリアル定理を銀河内の物質に対して式\eqref{eq:virial}の
 \begin{equation}
-	K + \overline{U} = U_\text{ta}
+	2 \overline{K}_\text{vir} + \overline{U}_\text{vir} = 0
+\end{equation}
+を適用する．ここで$\overline{K}$は全運動エネルギーの時間平均，$\overline{U}$は全ポテンシャルエネルギーの時間平均であり，添字virはビリアル(virial)の略である．これを一様球に対するエネルギー保存則
+\begin{equation}
+	\overline{K}_\text{vir} + \overline{U}_\text{vir} = U_\text{ta}
 \end{equation}
 および自己重力ポテンシャル$U \propto 1/R$と合わせると，平衡下での平均半径に対して
 \begin{equation}
-	\overline{R} = \frac{1}{2}R_\text{ta}
+	R_\text{vir} = \frac{1}{2}R_\text{ta}
 \end{equation}
 が得られる．このような状態は慣用的に「ビリアル平衡(virial equilibrium)」と呼ばれ，これに達した物理量は
 \begin{align}
-	\overline{t} \simeq t(\theta = 2\pi) = 2t_\text{ta},\\
-	\overline{\Delta} = 18 \pi^2 \simeq 178,
+	t_\text{vir} \simeq t(\theta = 2\pi) = 2t_\text{ta},\\
+	\Delta_\text{vir} = 18 \pi^2 \simeq 178,
 \end{align}
 となる．
 
@@ -65,9 +67,10 @@
 
 ここでは近傍宇宙を考えているので、$z=0$では$E(z) = 1$であり、$\Delta_\text{vir} = 200$のときのビリアル半径を$R_{200}$とすると次の式が成り立つ：
 \begin{align}
-	R_{200} \simeq 2.1 \left( \frac{M_\text{vir}}{10^{15} M_\odot} \right)^{1/3} \left( \frac{h}{0.7} \right)^{-2/3} \quad \si{Mpc}
+	R_{200} \simeq 2.1 \left( \frac{M_\text{vir}}{10^{15} M_\odot} \right)^{1/3} \left( \frac{h}{0.7} \right)^{-2/3} \quad \si{Mpc}　\label{eq:r200}
 \end{align}
 
+近傍の宇宙の場合，ビリアル半径は$R_{180}$や$R_{200}$程度であると考えることができ，より遠方の宇宙では宇宙項が無視できないため，$R_{100}$や$R_{110}$がビリアル半径となる．本研究では近傍宇宙，赤方偏移$z=0.00$を解析するため式\eqref{eq:r200}を用いる．
 
 %\begin{algorithmic}
 %	\Function{Solve\_Virial\_Mass}{$\text{radius}, \text{mass}, \text{density\_DM}, \text{density\_total}$}
