@@ -2,6 +2,70 @@
 \begin{document}
 	\appendix
 	\chapter{}
+	\section{ビリアル定理}
+	
+	系の運動が有界な領域に限られている場合には，運動エネルギーの時間平均などに対してビリアル定理と呼ばれる簡単な関係式が成り立つ．
+	
+	$N$個の古典粒子からなる系において，$i$番目の粒子に対する運動方程式，および系の全運動エネルギーは
+	\begin{align}
+		m_i \ddot{\bm{r}}_i &= \bm{F}_i, \\
+		K &= \frac{1}{2} \sum_{i}^{N} m_i \dot{\bm{r}}_i^2,
+	\end{align}
+	でそれぞれ与えられる．今，
+	\begin{equation}
+		Q \equiv \sum_{i}^{N} m_i \ddot{\bm{r}}_i \cdot \bm{r}_i + \sum_{i}^{N} m_i \dot{\bm{r}}_i^2 = \sum_{i}^{N} \bm{F}_i \cdot \bm{r}_i + 2K
+	\end{equation}
+	とさらにその時間平均は
+	\begin{align}
+		\overline{\dot{Q}} &\equiv \lim_{\tau \rightarrow \infty} \frac{1}{\tau} \int_0^\tau \dot{Q} dt = \lim_{\tau \rightarrow \infty} \frac{1}{\tau} [Q(\tau) - Q(0)] \label{eq:A82}\\
+		&= \sum_{i}^{N} \bm{F}_i\cdot\bm{r}_i + 2 \overline{K}
+	\end{align}
+	となる．運動が有界な領域に限られているならば式\eqref{eq:A82}はゼロになるので
+	\begin{equation}
+		\overline{K} = -\frac{1}{2} \overline{\sum_{i}^{N} \bm{F}_i \cdot \bm{r}_i} \label{eq:A84}
+	\end{equation}
+	が成り立つ．これをビリアル定理と呼ぶ．
+	
+	特に，粒子間に働く力が保存力
+	\begin{equation}
+		\bm{F}_i = - \pdv{U}{\bm{r}_i}
+	\end{equation}
+	で，ポテンシャル$U$が任意の定数$\alpha$に対して
+	\begin{equation}
+		U(\alpha \bm{r}_1,\alpha \bm{r}_2,\cdots,\alpha \bm{r}_N) = \alpha^ U(\bm{r}_1, \bm{r}_2,\cdots,\bm{r}_N) \label{eq:A86}
+	\end{equation}
+	を満たす場合，つまり同次関数を考えると式\eqref{eq:A86}より
+	\begin{equation}
+		\pdv{U(\alpha \bm{r}_1,\alpha \bm{r}_2,\cdots,\alpha \bm{r}_N)}{\alpha} = k \alpha^{k-1} U(\bm{r}_1, \bm{r}_2,\cdots,\bm{r}_N)
+	\end{equation}
+	が成り立つが，この左辺は，
+	\begin{align}
+		\pdv{U(\alpha \bm{r}_1,\cdots,\alpha \bm{r}_N)}{\alpha} 
+		&= \pdv{U(\alpha \bm{r}_1,\cdots)}{\alpha \bm{r}_1} \pdv{\alpha \bm{r}_1}{\alpha} +
+		\cdots +
+		\pdv{U(\alpha \bm{r}N1,\cdots)}{\alpha \bm{r}_N} \pdv{\alpha \bm{r}_N}{\alpha} \\
+		&= \pdv{U(\alpha \bm{r}_1,\cdots)}{\alpha \bm{r}_1} \bm{r}_1 +
+		\cdots +
+		\pdv{U(\alpha \bm{r}N1,\cdots)}{\alpha \bm{r}_N}\bm{r}_N
+	\end{align}
+	とも書けるので，両辺で$\alpha = 1$とおくと
+	\begin{equation}
+		\pdv{U(\alpha \bm{r}_1,\cdots)}{\alpha \bm{r}_1} \bm{r}_1 +
+		\cdots +
+		\pdv{U(\alpha \bm{r}N1,\cdots)}{\alpha \bm{r}_N}\bm{r}_N
+		= kU(\bm{r}_1, \cdots, \bm{r}_N)
+	\end{equation}
+	である．このとき式\eqref{eq:A84}は
+	\begin{equation}
+		\overline{K} = \frac{k}{2} \overline{U}
+	\end{equation}
+	と書ける．たとえば，万有引力の場合は，$U$が粒子間の距離に反比例することから$k = -1$であり，
+	\begin{equation}
+		\overline{K} = - \frac{1}{2} \overline{U}
+	\end{equation}
+	が成り立つ．
+	
+%	\chapter{}
 	\section{解析対象のsubhalo一覧}
 	
 	\begin{longtable}{ccc}

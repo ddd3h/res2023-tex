@@ -1,9 +1,9 @@
 \RequirePackage{plautopatch}
-\documentclass[uplatex,a4paper,11pt,dvipdfmx]{jsreport}
+\documentclass[uplatex,a4paper,12pt,dvipdfmx]{jsreport}
 
 \usepackage{bm}
 \usepackage{physics}
-\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
 \usepackage{here}
 \usepackage[utf8]{inputenc}
 \usepackage{tcolorbox}
@@ -30,13 +30,14 @@
 \usepackage{pxjahyper}
 \usepackage{booktabs}
 \usepackage{algpseudocode}
+%\usepackage{algorithmic}
 \usepackage{algorithm}
 \usepackage{natbib}
 \usepackage{mathtools}
 \usepackage{longtable}
 \usepackage{subfiles}
 \bibpunct{(}{)}{;}{a}{}{,}
-
+\usepackage{mhchem}
 \hypersetup{% hyperrefオプションリスト
     setpagesize=false,
     bookmarksnumbered=true,%
@@ -46,6 +47,11 @@
     citecolor=blue,
     urlcolor=blue
 }
+
+
+\makeatletter
+\renewcommand{\ALG@name}{アルゴリズム}
+\makeatother
 
 \setlength{\textwidth}{\fullwidth}  %本文の幅(textwidth)を全体の幅(=ヘッダ部の幅)にそろえる
 \setlength{\evensidemargin}{\oddsidemargin} %偶数ページの余白と奇数ページの余白をそろえる

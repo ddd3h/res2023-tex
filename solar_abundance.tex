@@ -1,10 +1,10 @@
-\section{太陽組成比 (solar abundance)}
+\section{太陽組成比(solar abundance)}
 
-我々の宇宙や太陽がどういう組成でできており，元素ごとの存在比で示した量として太陽組成（宇宙組成）があり，英語でsolar abundanceやアバンダンス (Abundance of chemical elementsの略)　と言われることが多い．この太陽組成（宇宙組成）は太陽光球の分光観測で得られた元素組成を指すだけの時もあれば，隕石(コンドライト)の分析値を合わせて，隕石が太陽系全体の元素存在度（宇宙組成比）をよく近似していると仮定して，太陽組成ということもある．
+我々の宇宙や太陽がどういう組成でできており，元素ごとの存在比で示した量として太陽組成（宇宙組成）があり，英語でsolar abundanceやアバンダンス(Abundance of chemical elementsの略)と言われることが多い．この太陽組成（宇宙組成）は太陽光球の分光観測で得られた元素組成を指すだけの時もあれば，隕石(コンドライト)の分析値を合わせて，隕石が太陽系全体の元素存在度（宇宙組成比）をよく近似していると仮定して，太陽組成ということもある．
 
 太陽は始原的（太陽系生成前の環境）な元素分布を保持していると考えられており，隕石の中でも始原的な隕石は太陽系形成時のタイムカプセルのようにそのときの元素分布を保持していると考えると両者には近い関係が期待できる．太陽系ができた45億年前に多くの星が一生を終えて様々な元素が散りばめられ混ざった状態から太陽が生まれたと考えられているため，太陽組成は宇宙の平均的な組成に近いと考えられる．
 
-NASAの(宇宙)X線スペクトル解析ソフトXspecには，以下の9種類のアバンダンスが用意されている．
+分析手法や評価方法の違いや，作成された時期によって太陽組成は一意的には決まらない．そのため，分析や評価ごとに太陽組成がまとめられているものをアバンダンステーブルと呼び，NASAのX線スペクトル解析ソフトXspecには，以下の9種類のアバンダンステーブルが用意されている．
 \begin{description}
 	\item[angr] Anders E. \& Grevesse N. (1989, Geochimica et Cosmochimica Acta 53, 197) (Photospheric, using Table 2)
 	\item[aspl] Asplund M., Grevesse N., Sauval A.J. \& Scott P. (2009, ARAA, 47, 481) (Photospheric, using Table 1)
@@ -18,4 +18,11 @@ NASAの(宇宙)X線スペクトル解析ソフトXspecには，以下の9種類�
 	\item[lpgs] Lodders K., Palme H., Gail H.P. (2009, Landolt-Barnstein, New Series, vol VI/4B, pp 560--630) (Proto-solar, using Table 10)
 \end{description}
 
-本研究ではasplのアバンダンスを用いる．
+本研究ではasplのアバンダンステーブルを用いる．
+
+\subsubsection{太陽組成比(solar abundance)の計算方法}
+太陽組成比(solar abundance)を計算するには数密度を用いて$(\text{X/H})/(\text{X/H})_\odot$\footnote{$(\text{X/H})_\odot$は$(\text{X}_\odot/\text{H}_\odot)$と同義．}で計算できる．また以降，[X/H]という表記については一般的な定義と同様に以下の通りとする．
+\begin{equation}
+	\text{[X/H]} = \log(\text{X/H}) - \log(\text{X/H})_\odot
+\end{equation}
+ただしここではXは任意の元素，X$_\odot$は太陽組成の任意の元素とする．

@@ -1,6 +1,6 @@
 \section{IllustrisTNGのデータの取り扱い}
 
-Illustris-TNGはVolker Springelが率いて作られた最先端の宇宙論的銀河形成シミュレーションで，銀河形成を促進する様々な物理過程を考慮しながら，ビッグバン直後から現在までの模擬宇宙の広い範囲をシミュレーションしている（図\ref{fig:TNG50_z3_LymanAlpha_emission_2k}）．シミュレーションデータはTNG50，TNG100，TNG300の3つが存在し，それぞれ空間体積が\SI{50}{Mpc}，\SI{100}{Mpc}，\SI{300}{Mpc}の立法体内でシミュレーションを行っている．最も大きいTNG300は，銀河団などの珍しい天体の解析が可能であり，最大の銀河サンプルが得られる．一方，体積の小さいTNG50では，希少天体のサンプリングは比較的限定されるが，TNG300に比べ質量分解能は数百倍高く，銀河の構造的性質，銀河周辺のガスの詳細な構造，物理モデルの収束性などをより詳細に調べることができる．そこで本研究ではTNG50-1を利用して解析を行う．
+Illustris-TNGはVolker Springelが率いて作られた最先端の宇宙論的銀河形成シミュレーションで，銀河形成を促進する様々な物理過程を考慮しながら，ビッグバン直後から現在までの模擬宇宙の広い範囲をシミュレーションしている\footnote{TNG50-1において公開されているデータは全データで134.4 TBであり，スナップショットは赤方偏移$z=20.05$ (13.6 Gyr)から$z=0.00$ (13.80 Gyr)である．}（図\ref{fig:TNG50_z3_LymanAlpha_emission_2k}）．シミュレーションデータはTNG50，TNG100，TNG300の3つが存在し，それぞれ空間体積が\SI{50}{Mpc}，\SI{100}{Mpc}，\SI{300}{Mpc}の立法体内でシミュレーションを行っている．最も大きいTNG300は，銀河団などの珍しい天体の解析が可能であり，最大の銀河サンプルが得られる．一方，体積の小さいTNG50では，希少天体のサンプリングは比較的限定されるが，TNG300に比べ質量分解能は数百倍高く，銀河の構造的性質，銀河周辺のガスの詳細な構造，物理モデルの収束性などをより詳細に調べることができる．そこで本研究ではTNG50-1を利用して解析を行う．
 
 \begin{figure}
 	\centering
@@ -26,7 +26,7 @@ Illustrisプロジェクトのシミュレーションを含め，Illustris-TNG�
 
 \subsection{観測対象の選択}
 
-Illustris-TNGには「TNG50 MW/M31-like catalog (天の川銀河に似た銀河のカタログ)」が公開されている\citep{pillepich_milky_2023}．そのうち，Fermi/eROSITA-like bubblesが観測されているsubhaloのカタログが公開されており\citep{pillepich_x-ray_2021}，その127個のsubhaloを解析することにする．その一覧を表\ref{tab:virialtable}に示す．このカタログのsubhaloのビリアル半径と質量の分布を図\ref{fig:distribution_of_VR_MASS}に示す。
+Illustris-TNGには「TNG50 MW/M31-like catalog (天の川銀河に似た銀河のカタログ)」が公開されている\citep{pillepich_milky_2023}．そのうち，Fermi/eROSITA-like bubblesが観測されているsubhaloのカタログが公開されており\citep{pillepich_x-ray_2021}，その127個のsubhaloを解析することにする．その一覧を図\ref{fig:erositabubblesubhaloid}に示し，ビリアル半径とsubhaloの質量について詳細にまとめたものを表\ref{tab:virialtable}に示す．またこのカタログのsubhaloのビリアル半径と質量の分布を図\ref{fig:distribution_of_VR_MASS}に示す。
 
 \begin{figure}
 	\centering
@@ -42,9 +42,37 @@ Illustris-TNGには「TNG50 MW/M31-like catalog (天の川銀河に似た銀河�
 		\subcaption{}
 		\label{fig:estimatedsubhalomass}
 	\end{minipage}
-	\caption{}
+	\captionsetup{width=.8\linewidth}
+	\caption{(a)ビリアル半径，(b)subhalo全体の質量に関するヒストグラムで縦軸は横軸に対応するsubhaloの個数．ビン数は20である．}
 	\label{fig:distribution_of_VR_MASS}
 \end{figure}
 
-我々の天の川銀河よりもビリアル半径と質量は比較的小さいものが多い。
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=0.9\linewidth]{pic/eROSITAbubble_subhaloID}
+	\caption{}
+	\label{fig:erositabubblesubhaloid}
+\end{figure}
+
+我々の天の川銀河のビリアル半径$(\sim 300 \si{kpc})$と質量$(\sim 200 \ 10^{10} M_\odot)$に対して比較的小さいものが多い。この中でも表\ref{tab:subhalo_details}に示す３つのsubhaloについて，本研究では詳細に解析を行う．
+
+\begin{table}[htbp]
+	\centering
+	\caption{本研究で詳細に解析を行うsubhaloについて}
+	\label{tab:subhalo_details}
+	\begin{tabular}{ccc}
+		\toprule
+		subhalo ID & ビリアル半径 (\si{kpc}) & subhalo Mass ($10^{10} M_\odot$)\\ \midrule
+		342447     & 223.02       & 112.38       \\
+		388544     & 335.84       & 470.60       \\
+		421555     & 321.32       & 374.33       \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\subsection{周期的境界条件の取り扱い}
+
+宇宙論的シミュレーションIllustris-TNGは周期シミュレーション(periodic simulation)であり，一様無限の空間を再現する手法として最も一般的な手法を用いている．境界を挟んで存在するsubhaloについては，座標を調整する必要がある．
+
+%\subsection{温度の計算}
+
 

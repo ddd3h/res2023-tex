@@ -30,74 +30,13 @@
 \begin{equation}
 	\frac{\dot{R}}{R} = \frac{2}{3t}
 \end{equation}
-が物質優勢期のハッブルパラメータ$H(t) \simeq 2/3t$と同じ形をしており，球形領域が当初は宇宙とともに膨張していたことを示す．また$\theta = \pi$に達すると，半径$R$は増加から減少に転じ，球形領域は収縮を始める．この時点の物理量を添字ta(転回を意味する英語"turn-around"の略)で表す．このときのポテンシャルと運動エネルギーの和は$U_\text{ta}+K_\text{ta} = U_\text{ta}$がいえる．
+が物質優勢期のハッブルパラメータ$H(t) \simeq 2/3t$と同じ形をしており，球形領域が当初は宇宙とともに膨張していたことを示す．また$\theta = \pi$に達すると，半径$R$は増加から減少に転じ，球形領域は収縮を始める．この時点の物理量を添字ta (転回を意味する英語"turn-around"の略)で表す．このときのポテンシャルと運動エネルギーの和は$U_\text{ta}+K_\text{ta} = U_\text{ta}$がいえる．
 
-
-
-系の運動が有界な領域に限られている場合には，運動エネルギーの時間平均などに対してビリアル定理と呼ばれる簡単な関係式が成り立つ．
-
-$N$個の古典粒子からなる系において，$i$番目の粒子に対する運動方程式，および系の全運動エネルギーは
-\begin{align}
-	m_i \ddot{\bm{r}}_i &= \bm{F}_i, \\
-	K &= \frac{1}{2} \sum_{i}^{N} m_i \dot{\bm{r}}_i^2,
-\end{align}
-でそれぞれ与えられる．今，
-\begin{equation}
-	Q \equiv \sum_{i}^{N} m_i \ddot{\bm{r}}_i \cdot \bm{r}_i + \sum_{i}^{N} m_i \dot{\bm{r}}_i^2 = \sum_{i}^{N} \bm{F}_i \cdot \bm{r}_i + 2K
-\end{equation}
-とさらにその時間平均は
-\begin{align}
-	\overline{\dot{Q}} &\equiv \lim_{\tau \rightarrow \infty} \frac{1}{\tau} \int_0^\tau \dot{Q} dt = \lim_{\tau \rightarrow \infty} \frac{1}{\tau} [Q(\tau) - Q(0)] \label{eq:A82}\\
-	&= \sum_{i}^{N} \bm{F}_i\cdot\bm{r}_i + 2 \overline{K}
-\end{align}
-となる．運動が有界な領域に限られているならば式\eqref{eq:A82}はゼロになるので
-\begin{equation}
-	\overline{K} = -\frac{1}{2} \overline{\sum_{i}^{N} \bm{F}_i \cdot \bm{r}_i} \label{eq:A84}
-\end{equation}
-が成り立つ．これをビリアル定理と呼ぶ．
-
-特に，粒子間に働く力が保存力
-\begin{equation}
-	\bm{F}_i = - \pdv{U}{\bm{r}_i}
-\end{equation}
-で，ポテンシャル$U$が任意の定数$\alpha$に対して
-\begin{equation}
-	U(\alpha \bm{r}_1,\alpha \bm{r}_2,\cdots,\alpha \bm{r}_N) = \alpha^ U(\bm{r}_1, \bm{r}_2,\cdots,\bm{r}_N) \label{eq:A86}
-\end{equation}
-を満たす場合，つまり同次関数を考えると式\eqref{eq:A86}より
-\begin{equation}
-	\pdv{U(\alpha \bm{r}_1,\alpha \bm{r}_2,\cdots,\alpha \bm{r}_N)}{\alpha} = k \alpha^{k-1} U(\bm{r}_1, \bm{r}_2,\cdots,\bm{r}_N)
-\end{equation}
-が成り立つが，この左辺は，
-\begin{align}
-	\pdv{U(\alpha \bm{r}_1,\cdots,\alpha \bm{r}_N)}{\alpha} 
-	&= \pdv{U(\alpha \bm{r}_1,\cdots)}{\alpha \bm{r}_1} \pdv{\alpha \bm{r}_1}{\alpha} +
-	\cdots +
-	\pdv{U(\alpha \bm{r}N1,\cdots)}{\alpha \bm{r}_N} \pdv{\alpha \bm{r}_N}{\alpha} \\
-	&= \pdv{U(\alpha \bm{r}_1,\cdots)}{\alpha \bm{r}_1} \bm{r}_1 +
-	\cdots +
-	\pdv{U(\alpha \bm{r}N1,\cdots)}{\alpha \bm{r}_N}\bm{r}_N
-\end{align}
-とも書けるので，両辺で$\alpha = 1$とおくと
-\begin{equation}
-	\pdv{U(\alpha \bm{r}_1,\cdots)}{\alpha \bm{r}_1} \bm{r}_1 +
-	\cdots +
-	\pdv{U(\alpha \bm{r}N1,\cdots)}{\alpha \bm{r}_N}\bm{r}_N
-	= kU(\bm{r}_1, \cdots, \bm{r}_N)
-\end{equation}
-である．このとき式\eqref{eq:A84}は
-\begin{equation}
-	\overline{K} = \frac{k}{2} \overline{U}
-\end{equation}
-と書ける．たとえば，万有引力の場合は，$U$が粒子間の距離に反比例することから$k = -1$であり，
-\begin{equation}
-	\overline{K} = - \frac{1}{2} \overline{U}
-\end{equation}
-が成り立つ．ここでビリアル定理を銀河内の物質に対しても適用する．
+ここでビリアル定理を銀河内の物質に対して適用する．
 
 一様球に対するエネルギー保存則
 \begin{equation}
-	\overline{K} + \overline{U} = U_\text{ta}
+	K + \overline{U} = U_\text{ta}
 \end{equation}
 および自己重力ポテンシャル$U \propto 1/R$と合わせると，平衡下での平均半径に対して
 \begin{equation}
