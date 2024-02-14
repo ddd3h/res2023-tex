@@ -1,0 +1,19 @@
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \relax }}{8}{figure.caption.4}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{15}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces (a)ビリアル半径，(b)subhalo全体の質量に関するヒストグラムで縦軸は横軸に対応するsubhaloの個数．ビン数は20である．\relax }}{16}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \relax }}{17}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \relax }}{20}{figure.caption.13}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces subhalo342447をedge-onで表示したもの．Massesを背景に表示して速度場を表示している．\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces edge-onで表示．Massesを背景に表示して速度場を表示している．\relax }}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces subhalo342447のFe, O, Mg, Siの太陽組成比を縦軸にし，横軸をsubhaloの中心(subhaloの移動質量中心で，subhalo内のすべての粒子/セルの質量加重相対座標の合計として計算される)からの距離をビリアル半径で規格化したものを片対数で表している．データは15個にグループまとめし，エラーバーは横軸がデータ幅(上限と下限)，縦軸が標準偏差を表す．\relax }}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 太陽組成比-対-ビリアル半径で規格化した半径．図\ref {fig:abundanceprofile342447}と同様\relax }}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces subhalo342447の[X/Fe] (ただし X $=$O, Ne, Mg, Si)を縦軸にし，横軸をsubhaloの中心(subhaloの移動質量中心で，subhalo内のすべての粒子/セルの質量加重相対座標の合計として計算される)からの距離をビリアル半径で規格化したものを片対数で表している．データは15個にグループまとめし，エラーバーは横軸がデータ幅(上限と下限)，縦軸が標準偏差を表す．\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces face-on表示にしたsubhalo342447を各メッシュ内の平均温度を表している．円はビリアル半径を表す．計算にはガスのみを対象とした．\relax }}{24}{figure.caption.19}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces subhalo342447をedge-onにした状態で中心にとり，ビリアル半径の3倍を表示．濃淡は対数で質量を表す．\relax }}{26}{figure.caption.20}%
+\addvspace {10\jsc@mpt }
+\addvspace {10\jsc@mpt }
